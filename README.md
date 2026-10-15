@@ -19,24 +19,46 @@ Official Laravel Blade icon package for **Icon by Solar**. Easily use 3,738 icon
 
 ---
 
+## Environment Support
+
+- **PHP:** `^8.1 || ^8.2 || ^8.3 || ^8.4`
+- **Laravel Framework (illuminate/view & support):** `^9.0 || ^10.0 || ^11.0 || ^12.0`
+- **Composer:** `>= 2.0`
+- **Self-Contained:** Includes all 3,738 SVG assets in `resources/svg` with zero monorepo dependencies.
+
+---
+
 ## Installation
 
-Add the package via Composer:
+### Official Registry (After Packagist Publication)
 
 ```bash
 composer require icon-by-solar/blade
 ```
 
-*(For local repository or monorepo development, add as a path repository in your Laravel `composer.json`):*
+### Local Workspace / Monorepo / Pre-Publication
+
+Add the package as a local path repository in your application's `composer.json`:
 
 ```json
 "repositories": [
     {
         "type": "path",
-        "url": "../icon-by-solar/packages/laravel-blade"
+        "url": "/path/to/icon-by-solar/packages/laravel-blade",
+        "options": {
+            "symlink": true
+        }
     }
 ]
 ```
+
+Then install via Composer:
+
+```bash
+composer require icon-by-solar/blade:@dev
+```
+
+---
 
 ### Configuration (Optional)
 
