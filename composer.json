@@ -1,0 +1,40 @@
+{
+  "name": "icon-by-solar/blade",
+  "description": "Idiomatic Laravel Blade icon component for Icon by Solar. Supports Bold, Bold Duotone, and Outline styles with zero React dependencies.",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Icon by Solar",
+      "role": "Maintainer"
+    }
+  ],
+  "require": {
+    "php": "^8.1 || ^8.2 || ^8.3 || ^8.4",
+    "illuminate/support": "^9.0 || ^10.0 || ^11.0 || ^12.0",
+    "illuminate/view": "^9.0 || ^10.0 || ^11.0 || ^12.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^10.0 || ^11.0",
+    "orchestra/testbench": "^8.0 || ^9.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "IconBySolar\\Blade\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "IconBySolar\\Blade\\Tests\\": "tests/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "IconBySolar\\Blade\\IconBySolarServiceProvider"
+      ]
+    }
+  },
+  "minimum-stability": "stable",
+  "prefer-stable": true
+}
